@@ -40,6 +40,35 @@
   #productssoldfirstcol{
     margin-bottom: 0px;
   }
+
+  #leftsidebar li > ul > li{
+    font-size: 0.85em;
+  }
+  #leftsidebar > li{
+    display: table;
+    width: 100%;
+  }
+  #leftsidebar > li > ul{
+    display: table-row;
+  }
+
+  #leftsidebar > li > ul > li:first-child{
+    display: table-cell;
+    width: 15%;
+  }
+  #leftsidebar > li > ul > li:first-child img{
+    margin: 0 auto;
+  }
+  #leftsidebar > li > ul > li:nth-child(2){
+    display: table-cell;
+  }
+  #highlightstable > tbody > tr > td:first-child{
+    text-align: center;
+  }
+  #highlightstable > tbody > tr > td:nth-child(2) > table{
+    border-right: none;
+    /*text-align: right;*/
+  }
 }
 @media(min-width:992px){
   #highlightstable > tbody > tr > td:last-child > table{
@@ -98,10 +127,14 @@
   #accountheadertable tr:last-child{
     font-size: 2.5714285714em;
   }
+  #highlightstable > tbody > tr > td:first-child{
+    text-align: left;
+  }
 }
 @media (min-width:768px) and (max-width:992px){
   #highlightstable > tbody > tr > td:nth-child(4) > table{
     border-right: none;
+    text-align: right;
   }
   #leftsidebar li > ul > li{
     font-size: 0.6428571429em;
@@ -116,6 +149,9 @@
   }
   #accountheadertable tr:last-child{
     font-size: 2.1428571429em;
+  }
+  #highlightstable > tbody > tr > td:first-child{
+    text-align: left;
   }
   #secondcolumn{
     padding-left: 25px;
@@ -283,10 +319,11 @@ ul li{
   padding-right: 0px;
   text-align: center;
 }
+/*
 #highlightstable > tbody > tr > td:first-child{
   text-align: left;
-
 }
+*/
 #highlightstable > tbody > tr > td:last-child{
   text-align: right;
 }
