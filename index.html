@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>OneMcKesson</title>
+
+  <!-- Bootstrap -->
+  <apex:outputPanel rendered="false">
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+</apex:outputPanel>
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+<apex:stylesheet value="{!URLFOR($Resource.onemck_v4, 'css/bootstrap.min.css')}"/>
+
+<link href="css/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <template id="mshbubble">
+    <svg class="visible-xs-block" width="80px" height="25px" viewBox="0 0 130 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+      <desc>Created with Sketch.</desc>
+      <defs></defs>
+      <g id="2.-DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-289.000000, -773.000000)">
+          <g id="Group-16" transform="translate(289.000000, 773.000000)">
+            <g id="Group-15">
+              <rect id="Rectangle-4" fill="#0181CE" x="0" y="0" width="130" height="25" rx="4"></rect>
+              <text id="Specialty-Health" font-family=".AppleSystemUIFont" font-size="14" font-weight="normal" fill="#FFFFFF">
+                <tspan x="6" y="17">Specialty Health</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <svg class="visible-sm-block visible-md-block visible-lg-block" width="130px" height="25px" viewBox="0 0 130 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+      <desc>Created with Sketch.</desc>
+      <defs></defs>
+      <g id="2.-DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-289.000000, -773.000000)">
+          <g id="Group-16" transform="translate(289.000000, 773.000000)">
+            <g id="Group-15">
+              <rect id="Rectangle-4" fill="#0181CE" x="0" y="0" width="130" height="25" rx="4"></rect>
+              <text id="Specialty-Health" font-family=".AppleSystemUIFont" font-size="14" font-weight="normal" fill="#FFFFFF">
+                <tspan x="6" y="17">Specialty Health</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </template>
+  <template id="uspbubble">
+    <svg class="visible-xs-block" width="80px" height="25px" viewBox="0 0 130 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+      <desc>Created with Sketch.</desc>
+      <defs></defs>
+      <g id="2.-DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-289.000000, -822.000000)">
+          <g id="Group-7" transform="translate(289.000000, 822.000000)">
+            <g id="Group-17">
+              <rect id="Rectangle-4" fill="#DD267D" x="0" y="0" width="130" height="25" rx="4"></rect>
+              <text id="Medical-Surgical" font-family=".AppleSystemUIFont" font-size="14" font-weight="normal" fill="#FFFFFF">
+                <tspan x="6" y="16">US Pharma</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <svg class="visible-sm-block visible-md-block visible-lg-block" width="130px" height="25px" viewBox="0 0 130 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+      <desc>Created with Sketch.</desc>
+      <defs></defs>
+      <g id="2.-DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-289.000000, -822.000000)">
+          <g id="Group-7" transform="translate(289.000000, 822.000000)">
+            <g id="Group-17">
+              <rect id="Rectangle-4" fill="#DD267D" x="0" y="0" width="130" height="25" rx="4"></rect>
+              <text id="Medical-Surgical" font-family=".AppleSystemUIFont" font-size="14" font-weight="normal" fill="#FFFFFF">
+                <tspan x="6" y="16">US Pharma</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </template>
+  <div class="container-fluid mycontainer">
+    <div class="row headerrow vertical-align">
+      <!--Header elements here-->
+      <div class="col-xs-1 vertical-align">
+        <button type="button" class="btn btn-default hamburgerbutton" aria-label="Left Align">
+          <span class="glyphicon glyphicon-menu-hamburger hamburgericon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="col-xs-2 hidden-xs">
+        <img src="img/OneMcKesson_Logo_White.png" class="img-responsive headerlogo" alt="mckesson logo(header)"/>
+      </div>
+      <div class="col-xs-6 col-xs-offset-3 visible-xs">
+        <img src="img/OneMcKesson_Logo_White.png" class="img-responsive headerlogo" alt="mckesson logo(header)"/>
+      </div>
+      <div class="col-xs-9 hidden-xs"><!--Search bar goes here-->
+        <div class="col-xs-12">
+          <ul class="list-inline headersearchul pull-right" >
+            <li class="hidden-xs">
+              <img src="img/Rectangle.png" class="img-responsive" alt="mckesson search rectangle(header)"/>
+            </li>
+            <li class="hidden-xs">
+              <div class="dropdown" id="headersearchdropdowndiv">
+                <input type="text" class="form-control dropdown-toggle headersearchbar" id="headersearchinput" data-toggle="dropdown" placeholder="Search Records">
+                <ul class="dropdown-menu" aria-labelledby="headersearchinput" id="headersearchinputsearchresult">
+                  <li><a>Name</a></li>
+                  <li><a>Business Units</a></li>
+                  <li><a>Lead Type</a></li>
+                </ul>
+              </div>
+              <!--<input type="text" class="form-control headersearchbar" placeholder="Search Accounts" list="searchresults">-->
+            </li>
+            <li>
+              <!--<img src="img/headersearch.png" class="img-responsive" alt="mckesson search(header)"/>-->
+              <img src="img/whitesearch.svg" class="img-responsive" alt="mckesson search(header)"/>
+            </li>
+          </ul>
+        </div><!-- /input-group -->
+      </div>
+      <div class="col-xs-5 visible-xs"><!--Search bar goes here-->
+        <!--<div class="col-xs-8">-->
+        <ul class="list-inline headersearchul pull-right" >
+          <li>
+            <!--<img src="img/headersearch.png" class="img-responsive" alt="mckesson search(header)" id="headersearchlogomobile"/>-->
+            <!--<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on bottom
+          </button>-->
+          <div id="headersearchmobilediv" data-toggle="popover" data-placement="bottom"><!--data-trigger="focus">-->
+            <img src="img/whitesearch.svg" class="img-responsive" alt="mckesson search(header)" id="headersearchlogomobile" />
+          </div>
+        </li>
+      </ul>
+      <!--</div>--><!-- /input-group -->
+    </div>
+    <!--<div id="header_search_popover_content_wrapper" style="display:none;">
+
+  </div>-->
+</div>
+<div class="row">
+  <!--Header elements here-->
+  <div class="col-xs-6 col-xs-offset-3 col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4"><!--OneMcK logo goes here-->
+    <img src="img/OneMcKesson_Logo_Color.png" class="img-responsive center-block mainlogo" alt="mckesson logo"/>
+  </div>
+</div>
+<div class="row">
+  <!--Header elements here-->
+  <div class="col-xs-12 text-center"><!--OneMcK logo goes here-->
+    <ul class="list-inline divisions">
+      <li>Specialty Health</li>
+      <li>-</li>
+      <li>US Pharma</li>
+    </ul>
+  </div>
+</div>
+<div class="row centersearchrow">
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+    <div class="input-group centersearch">
+      <ul class="list-inline centersearchul">
+        <li>
+          <div class="dropdown" id="centersearchdropdowndiv">
+            <input type="text" class="form-control dropdown-toggle" id="centersearchinput" data-toggle="dropdown" placeholder="Search Records">
+            <ul class="dropdown-menu" aria-labelledby="centersearchinput" id="centersearchinputsearchresult">
+              <li><a>Name</a></li>
+              <li><a>Business Units</a></li>
+              <li><a>Lead Type</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bluesearchsvg">
+          <img src="img/bluesearch.svg" class="img-responsive" alt="mckesson search(header)"/>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-inline sortbycol pull-right">
+      <li class="sortbyli">
+        Sort By
+      </li>
+      <li>
+        <div class="dropdown dropdownCustom">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span id="selected3" class="dropdownspan">Name</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu3" id="dropdown-menu3-ul">
+            <li><a>Name</a></li>
+            <li><a>Business Units</a></li>
+            <li><a>Lead Type</a></li>
+            <li class="hidden-xs"><a>Location/Clinics</a></li>
+            <li class="hidden-xs"><a>Date Created</a></li>
+            <li class="hidden-xs"><a>Created By</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12" id="leadtablecolumn">
+    <!--<div class="table-responsive">-->
+    <table class="table sfdatatable" id="leadtable">
+      <!--<colgroup>
+      <col class="col-xs-4"></col>
+      <col class="col-xs-4"></col>
+      <col class="col-xs-4"></col>
+    </colgroup>-->
+    <thead>
+      <tr>
+        <th id="leadtablefirstheader">
+          <ul class="list-inline">
+            <li>
+              <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+            </li>
+            <li>LEAD</li>
+          </ul>
+        </th>
+        <th>
+          <ul class="list-inline">
+            <li>
+              <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+            </li>
+            <li class="hidden-xs">BUSINESS UNITS</li>
+            <li class="visible-xs-inline-block" id="buheadermobile">BU</li>
+          </ul>
+        </th>
+        <th>
+          <ul class="list-inline">
+            <li>
+              <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+            </li>
+            <li>LEAD TYPE</li>
+          </ul>
+        </th>
+        <th class="hidden-xs">
+          <ul class="list-inline">
+            <li>
+              <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+            </li>
+            <li>LOCATION / CLINICS</li>
+          </ul>
+        </th>
+        <th class="hidden-xs">
+          <ul class="list-inline">
+            <li>
+              <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+            </li>
+            <li>DATE CREATED</li>
+          </ul>
+        </th>
+        <th class="hidden-xs">
+          <ul class="list-inline">
+            <li>
+              <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+            </li>
+            <li>CREATED BY</li>
+          </ul>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>Mercy General Hospital</td>
+            </tr>
+            <tr>
+              <td>
+                SAP Customer Number: 12345
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td id="leadrow1">
+        </td>
+        <td>Joint New</td>
+        <td class="hidden-xs">Trinity Oncology Clinic</td>
+        <td class="hidden-xs">06/15/17</td>
+        <td class="hidden-xs">Sarah Smith</td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>Chandler Regional Medical Center</td>
+            </tr>
+            <tr>
+              <td>
+                SAP Customer Number: 12345
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td id="leadrow2subrow1">
+              </td>
+            </tr>
+            <tr>
+              <td id="leadrow2subrow2">
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>USP Pull-Through</td>
+        <td class="hidden-xs">Trinity Oncology Clinic</td>
+        <td class="hidden-xs">06/18/17</td>
+        <td class="hidden-xs">Steve Jones</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--</div>-->
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <!--Right alignment for > mobile screen size-->
+    <ul class="list-inline sortbycol pull-right">
+      <li class="sortbyli">
+        Sort By
+      </li>
+      <li>
+        <div class="dropdown dropdownCustom">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span id="selected1" class="dropdownspan">Engagement Score</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="dropdown-menu1-ul">
+            <li><a>Name</a></li>
+            <li><a>Owners</a></li>
+            <li class="hidden-xs"><a>Business Units</a></li>
+            <li><a>Engagement Score</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- Table -->
+    <!--<div class="table-responsive">-->
+    <table class="table sfdatatable" id="accounttable">
+      <thead>
+        <tr>
+          <th>
+            <ul class="list-inline">
+              <li>
+                <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+              </li>
+              <li>ACCOUNT</li>
+            </ul>
+          </th>
+          <th>
+            <ul class="list-inline">
+              <li>
+                <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+              </li>
+              <li>OWNER</li>
+            </ul>
+          </th>
+          <th class="hidden-xs">
+            <ul class="list-inline">
+              <li>
+                <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+              </li>
+              <li>BUSINESS UNITS</li>
+            </ul>
+          </th>
+          <th class="hidden-xs">
+            <ul class="list-inline">
+              <li>
+                <img src="img/separator.png" class="img-responsive" alt="mckesson separator">
+              </li>
+              <li>ENGAGEMENT SCORE</li>
+            </ul>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>St. Josephs Hospital</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12345
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="sh_data_styling"><span class="hidden-xs">Joe Johnson</span>
+            <ul class="list-inline visible-xs-block">
+              <li class="sh_data_styling">
+                Joe Johnson
+              </li>
+              <li class="engcircle">
+                <img src="img/yellow_eng_score.svg" class="img-responsive" alt="red eng bubble"/>
+              </li>
+            </ul>
+          </td>
+          <td class="hidden-xs">Specialty Health</td>
+          <td class="hidden-xs">
+            <ul class="list-inline">
+              <li>
+                73
+              </li>
+              <li class="engcircle">
+                <img src="img/yellow_eng_score.svg" class="img-responsive" alt="red eng bubble"/>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Mercy San Jan Medical Center</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12346
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="usp_data_styling"><span class="hidden-xs">Sarah Smith</span>
+            <ul class="list-inline visible-xs-block">
+              <li class="usp_data_styling">
+                Sarah Smith
+              </li>
+              <li class="engcircle">
+                <img src="img/red_eng_score.svg" class="img-responsive" alt="red eng bubble"/>
+              </li>
+            </ul>
+          </td>
+          <td class="hidden-xs">US Pharma</td>
+          <td class="hidden-xs">
+            <ul class="list-inline">
+              <li>
+                66
+              </li>
+              <li class="engcircle">
+                <img src="img/red_eng_score.svg" class="img-responsive" alt="red eng bubble"/>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <!--<tr>
+          <td>
+            <table>
+              <tr>
+                <td>Mercy San Jan Medical Center</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12346
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>Joe Johnson</td>
+          <td class="hidden-xs">Medical Surgical</td>
+          <td class="hidden-xs">66</td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Mercy San Jan Medical Center</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12346
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>Joe Johnson</td>
+          <td class="hidden-xs">Medical Surgical</td>
+          <td class="hidden-xs">66</td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Mercy San Jan Medical Center</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12346
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>Joe Johnson</td>
+          <td class="hidden-xs">Medical Surgical</td>
+          <td class="hidden-xs">66</td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Mercy San Jan Medical Center</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12346
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>Joe Johnson</td>
+          <td class="hidden-xs">Medical Surgical</td>
+          <td class="hidden-xs">66</td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Mercy San Jan Medical Center</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12346
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>Joe Johnson</td>
+          <td class="hidden-xs">Medical Surgical</td>
+          <td class="hidden-xs">66</td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Mercy San Jan Medical Center</td>
+              </tr>
+              <tr>
+                <td>
+                  SAP Customer Number: 12346
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>Joe Johnson</td>
+          <td class="hidden-xs">Medical Surgical</td>
+          <td class="hidden-xs">66</td>
+        </tr>-->
+      </tbody>
+    </table>
+    <!--</div>-->
+  </div>
+</div>
+</div><!--main column-->
+</div>
+<div class="clearfix hidden-md hidden-lg"></div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

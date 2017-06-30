@@ -1,0 +1,420 @@
+/*Include Custom fonts*/
+@font-face {
+  font-family: "PT_Serif_Regular";
+  src: url("../custom_fonts/PT_Serif/PT_Serif-Web-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PT_Serif_Italic";
+  src: url("../custom_fonts/PT_Serif/PT_Serif-Web-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PT_Serif_Bold_Italic";
+  src: url("../custom_fonts/PT_Serif/PT_Serif-Web-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PT_Serif_Bold";
+  src: url("../custom_fonts/PT_Serif/PT_Serif-Web-Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "FranKleinBook_Bold";
+  src: url("../custom_fonts/FranKleinBook/FranKleinBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FranKleinBook_Book";
+  src: url("../custom_fonts/FranKleinBook/FranKleinBook.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FranKleinBook_Medium";
+  src: url("../custom_fonts/FranKleinBook/FranKleinMedium.ttf") format("truetype");
+}
+@media (max-width:767px){
+  #headersearchlogomobile{
+    width:70%;
+    margin: 0 auto;
+  }
+  #accountheadertable tr:last-child{
+    font-size: 1.7142857143em;
+  }
+  #productssoldfirstcol{
+    margin-bottom: 0px;
+  }
+}
+@media(min-width:992px){
+  #highlightstable > tbody > tr > td:last-child > table{
+    border-right: none;
+  }
+  #leftsidebar li > ul > li{
+    font-size: 0.85em;
+  }
+  #leftsidebar > li{
+    display: table;
+    width: 100%;
+  }
+  #leftsidebar > li > ul{
+    display: table-row;
+  }
+
+  #leftsidebar > li > ul > li:first-child{
+    display: table-cell;
+    width: 25%;
+  }
+  #leftsidebar > li > ul > li:first-child img{
+    margin: 0 auto;
+  }
+  #leftsidebar > li > ul > li:nth-child(2){
+    display: table-cell;
+    /*text-align: center;*/
+  }
+  #secondcolumn{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #totalSaleslistgroup > li{
+    display: table;
+    width: 100%;
+  }
+  #totalSaleslistgroup > li:first-child{
+    display: table;
+    width: 100%;
+  }
+  #totalSaleslistgroup > li:last-child{
+    display: table;
+    width: 100%;
+  }
+  #totalSaleslistgroup > li > ul{
+    display: table-row;
+  }
+  #totalSaleslistgroup > li > ul > li{
+    display: table-cell;
+  }
+  #totalSaleslistgroup > li > ul > li:first-child{
+    width: 45%;
+  }
+  #influencerdiv svg{
+    width: 85%
+  }
+  #accountheadertable tr:last-child{
+    font-size: 2.5714285714em;
+  }
+}
+@media (min-width:768px) and (max-width:992px){
+  #highlightstable > tbody > tr > td:nth-child(4) > table{
+    border-right: none;
+  }
+  #leftsidebar li > ul > li{
+    font-size: 0.6428571429em;
+  }
+  #leftsidebar > li > ul > li{
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  #leftsidebar > li > ul > li > img{
+    margin:0 auto;
+  }
+  #accountheadertable tr:last-child{
+    font-size: 2.1428571429em;
+  }
+  #secondcolumn{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+body{
+  background-image: url("../img/background_small.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  font-family: "FranKleinBook_Book";
+}
+.row{
+  /*margin-right: 0px;
+  margin-left:  0px;*/
+}
+.container-fluid{
+  /*padding-left: 0px;
+  padding-right: 0px;*/
+}
+ul li{
+  vertical-align: middle;
+}
+.headerrow{
+  border: 1px solid #979797;
+  background: #006EB0;
+  margin-top: 20px;
+  border-radius: 6px 6px 6px 6px;
+  height:60px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.headerrow > div:first-child{
+  background-color: #015384;
+  width: 60px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  /*padding: 0px;*/
+  height: 100%;
+  justify-content: center;
+}
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+.hamburgerbutton{
+  background: transparent;
+  border: none;
+}
+.hamburgerbutton:hover{
+  background: none ;
+  box-shadow: none ;
+}
+.hamburgerbutton:not(:hover){
+  background: none ;
+  box-shadow: none ;
+}
+.hamburgerbutton:active:focus{
+  background: none ;
+  box-shadow: none ;
+}
+.hamburgericon{
+  border:none;
+  color: #40B4FA;
+}
+.hamburgerbuttonli{
+  background: #015384;
+}
+.headersearchul{
+  margin:0px;
+}
+.headersearchul li{
+  vertical-align: middle;
+}
+.headersearchbar{
+  background: #006EB0;
+  font-family: 'PT_Serif_Italic';
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 15px;
+  border:none;
+  box-shadow: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.headersearchbar::placeholder{
+  color: #FFFFFF;
+  font-weight: 300;
+}
+#headersearchinputsearchresult{
+  font-family: 'PT_Serif_Italic';
+}
+.myrow{
+  margin-bottom: 1em;
+}
+#navrow{
+  margin-top: 1em;
+}
+#backbutton{
+  font-size: 0.8571em;
+}
+#backchevron{
+  margin-right: 0.5em;
+  color: #F5852A;
+}
+#accountheadertable td{
+  border-left-color: orange;
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-right: none;
+  border-top: none;
+
+}
+#accountheadertable tr:first-child{
+  font-size: 1.2857142857em;
+}
+#accountheadertable tr:first-child td{
+  padding-bottom: 0px;
+}
+#accountheadertable tr:last-child{
+  font-family: 'PT_Serif_Italic';
+  color:#006EB0;
+}
+#accountheadertable tr:last-child td{
+  padding-top: 0px;
+}
+#leftsidebar li{
+  background: #002F4C;
+  border: none;
+  color: rgba(240,240,240,1);
+}
+
+
+#overviewli{
+  background: #015384 !important;
+}
+#overviewli ul li{
+  background: #015384 !important;
+}
+#overviewchevron{
+  color: #40B4FA;
+}
+.sidebarlist li{
+  vertical-align: middle;
+}
+#highlightstable{
+  margin-bottom: 0px;
+}
+#highlightstable table{
+  background-color: transparent;
+}
+#highlightstable td{
+  border: none;
+}
+#highlightstable > tbody > tr > td > table{
+  border-right-style: solid;
+  border-right-color: #8FADC7;
+  border-right-width: 1px;
+}
+
+#highlightstable > tbody > tr > td{
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+#highlightstable > tbody > tr > td:first-child{
+  text-align: left;
+
+}
+#highlightstable > tbody > tr > td:last-child{
+  text-align: right;
+}
+.highlightsnestedtable tr:first-child{
+  font-size: 1.2857142857em;
+}
+.highlightsnestedtable tr:nth-child(2){
+  font-size: 1em;
+}
+.sectionheader{
+  color: #015384;
+}
+
+#engheaderpanel{
+  border: none;
+}
+#engheaderpanel > div:first-child{
+  background-color: #FFB700;
+  padding-bottom: 1px;
+  border: none;
+}
+#engheaderpaneldiv{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#engagementtable_nested{
+  margin-bottom: 15px;
+}
+#engagementtable_nested td:first-child{
+  color:white;
+  border-right-color: white;
+  border-right-style: solid;
+  border-right-width: 4px;
+  font-size: 2.571em;
+  border-top: none;
+}
+#engagementtable_nested > tbody > tr:first-child > td:first-child{
+  padding-bottom: 0px;
+  width: 20%;
+}
+#engagementtable_nested > tbody > tr:first-child > td:nth-child(2){
+  padding-bottom: 0px;
+  padding-left: 30px;
+  border-top: none;
+}
+
+#engagementtable{
+  background: white;
+  border-radius: 6px;
+}
+#engagementtable td{
+  border:none;
+}
+
+#engagementtable tr:not(:last-child){
+  border-bottom-style: solid;
+  border-bottom-color: #D1D8DE;
+  border-bottom-width: 1px;
+}
+#engagementtable tr:first-child td:first-child{
+  border-top-left-radius: 6px;
+  padding-bottom: 0px;
+}
+#engagementtable tr:first-child td:last-child{
+  border-top-right-radius: 6px;
+}
+#compinsightdiv{
+  padding-left: 20px;
+  background-color: white;
+  padding-right: 20px;
+  border-radius: 6px;
+}
+#compinsightlistgroup li{
+  border-left:none;
+  border-right:none;
+  padding-left: 0px;
+}
+#compinsightlistgroup li:first-child{
+  border-top:none;
+}
+#compinsightlistgroup li:last-child{
+  border-bottom:none;
+}
+#ytdnetsales{
+  font-size: 1.2857142857em;
+}
+#totalSalesAmount{
+  font-size: 2.571em;
+}
+#totalSaleslistgroup > li{
+  border-left:none;
+  border-right: none;
+}
+#totalSaleslistgroup > li:first-child{
+  border-top:none;
+}
+#totalSaleslistgroup > li:last-child{
+  border-bottom:none;
+}
+/*
+#totalSaleslistgroup > li > ul{
+  display: table-row;
+}
+#totalSaleslistgroup > li > ul > li{
+  display: table-cell;
+}
+#totalSaleslistgroup > li > ul > li:first-child{
+  width: 45%;
+}
+*/
+
+#influencerdiv{
+  background: white;
+  border-radius: 6px;
+}
+
+.engtimelinerow > div:first-child{
+  padding-right: 0px;
+}
+.engtimelinerow > div:last-child{
+  padding-left: 0px;
+}
+#productssolddetailsrow{
+  background: white;
+  border-radius: 6px;
+  margin-right: -4px;
+}
+#productssolddetailsrow li{
+  border: none;
+  padding-bottom: 0px;
+}

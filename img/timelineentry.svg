@@ -1,0 +1,26 @@
+
+<svg width="32px" height="102px" viewBox="0 0 32 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.-DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-895.000000, -717.000000)">
+            <g id="OVERVIEW" transform="translate(20.000000, 98.000000)">
+                <g id="ENGAGEMENT-TIMELINE" transform="translate(834.000000, 579.000000)">
+                    <g id="TIMELINE" transform="translate(41.000000, 40.000000)">
+                        <g id="Group-19">
+                            <path d="M15.5616667,0.670021972 L15.5616667,100.5" id="Line" stroke="#40B4FA" stroke-width="1.30149999" stroke-linecap="square"></path>
+                            <circle id="Oval-3" fill="#40B4FA" cx="16" cy="16" r="16"></circle>
+                            <text id="APR" font-family=".AppleSystemUIFont" font-size="8.45975039" font-weight="normal" fill="#FFFFFF">
+                                <tspan x="7.42683091" y="11.3684211">APR</tspan>
+                            </text>
+                            <text id="3" font-family=".AppleSystemUIFont" font-size="15.2275507" font-weight="normal" fill="#FFFFFF">
+                                <tspan x="11.3555753" y="23.4210526">3</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+
+<svg width="461px" height="73px" viewBox="0 0 461 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.-DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-960.000000, -725.000000)">
+            <g id="OVERVIEW" transform="translate(20.000000, 98.000000)">
+                <g id="ENGAGEMENT-TIMELINE" transform="translate(834.000000, 579.000000)">
+                    <g id="Group-14" transform="translate(106.000000, 48.000000)">
+                        <g id="Group-20">
+                            <path d="M14.8717758,0 L455.436695,0 C458.308125,0 460.635878,2.32569629 460.635878,5.20606242 L460.635878,67.7939376 C460.635878,70.6691665 458.30422,73 455.436695,73 L20.0709588,73 C17.1995293,73 14.8717758,70.6715073 14.8717758,67.7847638 L14.8717758,14.5220187 L0,0 L14.8717758,0 Z" id="Rectangle-11" fill="#FFFFFF"></path>
+                            <g id="Group-7-Copy-9" transform="translate(37.000000, 23.000000)" stroke="#006EB0" stroke-width="1.30149999">
+                                <g id="Group-10" transform="translate(0.219869, 0.176471)">
+                                    <rect id="Rectangle-12" x="0.650749994" y="0.650749994" width="20.7654683" height="15.2615252"></rect>
+                                    <path d="M10.8864654,8.18629669 L1.93920232,1.18958614 L19.8995097,1.18958614 L10.8864654,8.18629669 Z" id="Triangle"></path>
+                                </g>
+                            </g>
+                            <text id="Purchased-Vision-Mob" font-family=".AppleSystemUIFont" font-size="14" font-weight="normal" line-spacing="14" fill="#000000">
+                                <tspan x="69.0358974" y="34.7492143">Purchased Vision Mobile</tspan>
+                                <tspan x="69.0358974" y="52.1331142">Joe Johnson</tspan>
+                            </text>
+                            <text id="April-3,-2017---2:34" font-family=".AppleSystemUIFont" font-size="10.4119999" font-weight="normal" line-spacing="19.5224998" fill="#474D51">
+                                <tspan x="334.185068" y="29">April 3, 2017 - 2:34 PM</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
