@@ -130,6 +130,17 @@
   #highlightstable > tbody > tr > td:first-child{
     text-align: left;
   }
+  #leftsidebarulcontainer{
+    height: 100%;
+    background: #002F4C;
+    border-radius: 6px;
+  }
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
 }
 @media (min-width:768px) and (max-width:992px){
   #highlightstable > tbody > tr > td:nth-child(4) > table{
@@ -157,6 +168,17 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+  #leftsidebarulcontainer{
+    height: 100%;
+    background: #002F4C;
+    border-radius: 6px;
+  }
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
 }
 
 body{
@@ -165,6 +187,7 @@ body{
   background-size:cover;
   font-family: "FranKleinBook_Book";
 }
+
 .row{
   /*margin-right: 0px;
   margin-left:  0px;*/

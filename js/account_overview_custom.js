@@ -27,3 +27,8 @@ $(document).ready(function(){
   document.getElementById('leadrow2subrow2').appendChild(uspbubble);*/
 
 });
+
+$(window).resize(function(){
+/*alert('window was resized!');*/
+
+});
