@@ -310,10 +310,10 @@ ul li{
 }
 
 
-#overviewli{
+#opptyli{
   background: #015384 !important;
 }
-#overviewli ul li{
+#opptyli ul li{
   background: #015384 !important;
 }
 #overviewchevron{
@@ -455,7 +455,7 @@ ul li{
 }
 #totalSaleslistgroup > li > ul > li:first-child{
   width: 45%;
-}
+
 */
 
 #influencerdiv{
@@ -469,12 +469,243 @@ ul li{
 .engtimelinerow > div:last-child{
   padding-left: 0px;
 }
-#productssolddetailsrow{
+#oppdetailsrow{
   background: white;
   border-radius: 6px;
-  margin-right: -4px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
-#productssolddetailsrow li{
+#oppdetailsrow li{
   border: none;
   padding-bottom: 0px;
 }
+#noteslistgroup{
+  margin-bottom: 0px;
+}
+#noteslistgroup li{
+  background: none;
+}
+#noteslistgroup > li{
+  border:none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#noteslistgroup > li:not(:last-child){
+  border:none;
+  border-bottom-width: 1px;
+  border-bottom-color: #D1D8DE;
+  border-bottom-style: solid;
+}
+#noteslistgroup > li > ul > li{
+  border:none;
+}
+#noteslistgroup > li > ul{
+  margin-bottom:0px;
+}
+#noteslistgroup > li > ul > li > ul > li:last-child{
+  float:right;
+  font-size: 0.5714285714em;
+  /*to ensure the floated element is centrally aligned*/
+  line-height: 26px;
+}
+#noteslistgroup > li > ul > li > ul > li:first-child>img{
+   height: 26px;
+   width: auto;
+}
+#notesdiv{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#notesrow{
+  background-color: white;
+  border-radius: 6px;
+}
+.notesinputbar{
+  font-family: 'PT_Serif_Italic';
+  border:none;
+  box-shadow: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  padding-left: 0px;
+}
+.notesinputbar::placeholder{
+}
+#oppdatatable > tbody > tr > td:last-child > ul > li:nth-child(2) > button{
+  background: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#oppdatatable > tbody > tr > td:last-child > ul{
+  margin-bottom: 0px;
+}
+.opprowdetails > div > ul > li{
+  display: table;
+  width: 100%;
+}
+.opprowdetails > div > ul > li > ul{
+  display: table-row;
+}
+.opprowdetails > div > ul > li > ul > li{
+  display: table-cell;
+  width: 50%;
+}
+.opprowdetails > div > ul > li > ul > li:first-child{
+  font-weight: bold;
+}
+#oppdatatable > tbody > tr:nth-child(even) > td{
+padding-top: 0px;
+padding-bottom: 0px;
+border: none;
+}
+
+#oppdatatable > thead{
+  font-weight: bold;
+}
+#filterPopover{
+  cursor:pointer;
+}
+
+.filtercolul{
+  border-radius: 4px;
+  background-color: #006EB0;
+  display: table-cell;
+  height:30px;
+  vertical-align: middle;
+}
+.filtercolul > li:nth-child(2){
+  font-size: 1em;
+  color: #FFFFFF;
+}
+.filtericon{
+  color: #F5852A;
+}
+
+.filterpopup{
+  font-family: "FranKleinBook_Book";
+  background-color: rgba(69,83,94,70);
+  color: #FFFFFF;
+}
+
+.filterpopup li{
+  background: none;
+  border:none;
+  padding-bottom: 0px;
+}
+.filterpopup ul{
+  margin-bottom: 0px;
+}
+.filterpopup > div:last-child > div:first-child{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.filterpopup > div:last-child > div:first-child >ul{
+  margin:0 auto;
+}
+.popover.right>.arrow:after{
+  border-right-color: rgba(69,83,94,70);
+}
+.filterpopovercontent ul div{
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+
+
+/*Checkbox library*/
+.checkbox {
+  padding-left: 20px; }
+  .checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; }
+    .checkbox label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      /*background-color: #fff;*/
+      -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+      .checkbox label::after {
+        display: inline-block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 1px;
+        top: 1px;
+        margin-left: -20px;
+        padding-left: 3px;
+        padding-top: 1px;
+        font-size: 11px;
+        color: #555555; }
+        .checkbox input[type="checkbox"] {
+          opacity: 0; }
+          .checkbox input[type="checkbox"]:focus + label::before {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px; }
+            .checkbox input[type="checkbox"]:checked + label::after {
+              /*font-family: 'FontAwesome';*/
+              content: "\2713";
+              color: white;
+            }
+            .checkbox input[type="checkbox"]:disabled + label {
+              opacity: 0.65; }
+              .checkbox input[type="checkbox"]:disabled + label::before {
+                background-color: #eeeeee;
+                cursor: not-allowed; }
+                .checkbox.checkbox-circle input[type="checkbox"]:checked + label::before {
+                  border-radius: 50%;
+                  background-color: orange;
+                  border: none;
+
+                }
+                .checkbox input[type="checkbox"]:not(:checked) + label::before {
+                  /*font-family: 'FontAwesome';
+                  content: "\f00c";*/
+                  border-radius: 50%;
+                  /*background: rgba(0,21,35,0.70);*/
+                  border: 1px solid #cccccc;
+                }
+                .checkbox.checkbox-inline {
+                  margin-top: 0; }
+
+                  .checkbox-primary input[type="checkbox"]:checked + label::before {
+                    background-color: #428bca;
+                    border-color: #428bca;
+                  }
+                  .checkbox-primary input[type="checkbox"]:checked + label::after {
+                    color: #fff; }
+
+                    .checkbox-danger input[type="checkbox"]:checked + label::before {
+                      background-color: #d9534f;
+                      border-color: #d9534f; }
+                      .checkbox-danger input[type="checkbox"]:checked + label::after {
+                        color: #fff; }
+
+                        .checkbox-info input[type="checkbox"]:checked + label::before {
+                          background-color: #5bc0de;
+                          border-color: #5bc0de; }
+                          .checkbox-info input[type="checkbox"]:checked + label::after {
+                            color: #fff; }
+
+                            .checkbox-warning input[type="checkbox"]:checked + label::before {
+                              background-color: #f0ad4e;
+                              border-color: #f0ad4e; }
+                              .checkbox-warning input[type="checkbox"]:checked + label::after {
+                                color: #fff; }
+
+                                .checkbox-success input[type="checkbox"]:checked + label::before {
+                                  background-color: #5cb85c;
+                                  border-color: #5cb85c; }
+                                  .checkbox-success input[type="checkbox"]:checked + label::after {
+                                    color: #fff; }
