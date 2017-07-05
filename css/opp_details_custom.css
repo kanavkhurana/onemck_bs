@@ -612,8 +612,26 @@ border: none;
 margin-top: 0px !important;
 margin-bottom: 0px !important;
 }
-
-
+.dropdownCustom{
+  text-align: left;
+  width:145px;
+  font-family: 'PT_Serif_Italic';
+}
+.dropdownspan{
+    width: 120px;
+    text-align: left;
+    display: inline-block;
+}
+#oppdropdown{
+  border: none;
+  background: none;
+}
+#oppdropdowncaret{
+  color: #F5852A;
+}
+ul.dropdown-menu > li {
+    cursor: pointer;
+}
 /*Checkbox library*/
 .checkbox {
   padding-left: 20px; }

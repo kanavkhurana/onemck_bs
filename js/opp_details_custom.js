@@ -23,3 +23,7 @@ $('#filterPopover').popover({
 });
 
 });
+
+$('#oppdropdown-ul a').click(function(){
+  $('#oppdropdownselected').text($(this).text());
+});

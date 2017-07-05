@@ -435,7 +435,29 @@
     </div>
     <div class="col-xs-6">
       <div class="pull-right">
-        Sort By
+        <!--Sort By-->
+        <!--<div class="dropdown" id="oppsortdropdowndiv">
+          <input type="text" class="form-control dropdown-toggle oppsortdropdown" id="oppsortdropdowninput" data-toggle="dropdown" placeholder="Search Accounts">
+          <ul class="dropdown-menu" aria-labelledby="headersearchinput" id="headersearchinputsearchresult">
+            <li><a>Name</a></li>
+            <li><a>Business Units</a></li>
+            <li><a>Lead Type</a></li>
+          </ul>
+        </div>-->
+        <div class="dropdown dropdownCustom">
+          <button class="btn btn-default dropdown-toggle" type="button" id="oppdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span id="oppdropdownselected" class="dropdownspan">Name</span>
+            <span id="oppdropdowncaret" class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="oppdropdown" id="oppdropdown-ul">
+            <li><a>Name</a></li>
+            <li><a>Business Units</a></li>
+            <li><a>Lead Type</a></li>
+            <li class="hidden-xs"><a>Location/Clinics</a></li>
+            <li class="hidden-xs"><a>Date Created</a></li>
+            <li class="hidden-xs"><a>Created By</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
