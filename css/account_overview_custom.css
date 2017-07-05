@@ -87,7 +87,7 @@
 
   #leftsidebar > li > ul > li:first-child{
     display: table-cell;
-    width: 25%;
+    width: 30%;
   }
   #leftsidebar > li > ul > li:first-child img{
     margin: 0 auto;
@@ -307,8 +307,12 @@ ul li{
   background: #002F4C;
   border: none;
   color: rgba(240,240,240,1);
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
+#leftsidebar .list-inline{
+      margin-left: 0px;
+}
 
 #overviewli{
   background: #015384 !important;
