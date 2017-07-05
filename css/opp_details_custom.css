@@ -507,10 +507,10 @@ ul li{
   float:right;
   font-size: 0.5714285714em;
   /*to ensure the floated element is centrally aligned*/
-  line-height: 26px;
+  line-height: 35px;
 }
 #noteslistgroup > li > ul > li > ul > li:first-child>img{
-   height: 26px;
+   height: 35px;
    width: auto;
 }
 #notesdiv{
