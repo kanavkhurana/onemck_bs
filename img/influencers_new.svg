@@ -1,0 +1,142 @@
+
+<svg width="492px" height="207px" viewBox="-5 0 495 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M181.925893,110.7643 L57.0778554,25.6185263 L322.388095,25.6185263 L181.925893,110.7643 Z M440,110.7643 L181.925893,110.7643 L440,110.7643 Z" id="path-1"></path>
+        <filter x="-1.8%" y="-4.1%" width="103.2%" height="112.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="62.5" cy="62.5" r="62.5"></circle>
+        <filter x="-10.4%" y="-7.2%" width="120.8%" height="122.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-5" cx="62.3256336" cy="62.2894697" rx="58.4878143" ry="58.9682779"></ellipse>
+        <circle id="path-7" cx="25" cy="25" r="25"></circle>
+        <filter x="-23.0%" y="-15.0%" width="146.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-9" cx="25" cy="25" r="25"></circle>
+        <filter x="-23.0%" y="-15.0%" width="146.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-11" cx="444" cy="115" r="45"></circle>
+        <filter x="-12.8%" y="-8.3%" width="125.6%" height="127.8%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-13" cx="42.970018" cy="42.966693" rx="42.970018" ry="42.966693"></ellipse>
+        <ellipse id="path-15" cx="23.9940379" cy="23.9661278" rx="23.9558672" ry="23.9592732"></ellipse>
+        <ellipse id="path-17" cx="23.8350372" cy="23.4849971" rx="23.1148086" ry="22.8322531"></ellipse>
+    </defs>
+    <g id="2.-DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-283.000000, -961.000000)">
+            <g id="OVERVIEW" transform="translate(20.000000, 98.000000)">
+                <g id="INFLUENCERS" transform="translate(252.000000, 821.000000)">
+                    <g id="Influencer-Icons" transform="translate(8.000000, 45.000000)">
+                        <g id="Group-22">
+                            <g id="Group-6" transform="translate(399.000000, 70.000000)">
+                                <g id="Icon_Contacts" transform="translate(28.000000, 22.000000)"></g>
+                            </g>
+                            <g id="Line">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use stroke="#D1D8DE" stroke-width="3" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="Group-4" transform="translate(119.000000, 46.000000)">
+                                <g id="Joe-Johnson-Oval">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                    <use stroke="#006EB0" stroke-width="8" fill="#40B4FA" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                </g>
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <use id="Mask" fill="#D8D8D8" xlink:href="#path-5"></use>
+                                <image id="man" mask="url(#mask-6)" x="1.27544571" y="4.37264801" width="116.975629" height="117.936556" xlink:href="man-jj.jpeg"></image>
+                            </g>
+                            <text id="Joe-Johnson" font-family=".SFNSDisplay, .SF NS Display" font-size="20" font-weight="normal" fill="#000000">
+                                <tspan x="128.195312" y="200">Joe Johnson</tspan>
+                            </text>
+                            <text id="Stanley-Patterson" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" line-spacing="12" fill="#000000">
+                                <tspan x="0" y="67">Stanley Patterson</tspan>
+                            </text>
+                            <text id="Carrie-Elliott" font-family=".AppleSystemUIFont" font-size="12" font-weight="normal" line-spacing="12" fill="#000000">
+                                <tspan x="304.134766" y="65.0800781">Carrie </tspan>
+                                <tspan x="305.353516" y="80.463978">Elliott</tspan>
+                            </text>
+                            <text id="Charlotte-Douglas" font-family=".SFNSText, .SF NS Text" font-size="16" font-weight="normal" line-spacing="18" fill="#000000">
+                                <tspan x="410.402344" y="182">Charlotte </tspan>
+                                <tspan x="414.394531" y="200">Douglas</tspan>
+                            </text>
+                            <g id="Group-2" transform="translate(29.000000, 0.000000)">
+                                <g id="Oval-3">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                    <use stroke="#5B923D" stroke-width="5" fill="#86C463" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                </g>
+                                <g id="Icon_Contacts" transform="translate(18.000000, 15.000000)" fill="#EDF3F8">
+                                    <path d="M1.64422567,18.2983029 L13.184186,18.2983029 L13.4156362,14.8762761 C13.4644577,14.1719805 12.8144083,13.0644553 11.9320045,12.7398826 C9.03616519,11.7028774 5.79947935,11.699261 2.88917439,12.7416908 C2.01671578,13.0644553 1.3648581,14.1746928 1.41096731,14.8762761 L1.64422567,18.2983029 Z M13.6892892,19.8518627 L1.13818627,19.8518627 C0.687818627,19.8518627 0.31379902,19.5027206 0.282058824,19.0532108 L0.00583333333,15.0041912 C-0.0928186275,13.5132598 1.06441176,11.795 2.53389706,11.2519853 C5.68561275,10.1222059 9.15044118,10.1264951 12.2875735,11.2494118 C13.7682108,11.7941422 14.926299,13.5132598 14.8207843,15.0067647 L14.5454167,19.0514951 C14.5153922,19.5027206 14.1422304,19.8518627 13.6892892,19.8518627 L13.6892892,19.8518627 Z" id="Fill-3"></path>
+                                    <path d="M7.48528186,1.28676471 C5.96579443,1.28676471 4.72893363,2.78064833 4.72893363,4.61525954 C4.72893363,6.44987074 5.96579443,7.94276961 7.48528186,7.94276961 C9.0047693,7.94276961 10.2416301,6.44987074 10.2416301,4.61525954 C10.2416301,2.78064833 9.0047693,1.28676471 7.48528186,1.28676471 M7.48528186,9.22953431 C5.21542892,9.22953431 3.36849265,7.15955882 3.36849265,4.61519608 C3.36849265,2.06997549 5.21542892,0 7.48528186,0 C9.7551348,0 11.6020711,2.06997549 11.6020711,4.61519608 C11.6020711,7.15955882 9.7551348,9.22953431 7.48528186,9.22953431" id="Fill-1"></path>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(299.000000, 0.000000)">
+                                <g id="Oval-3">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                    <use stroke="#9F8442" stroke-width="5" fill="#E1B959" fill-rule="evenodd" xlink:href="#path-9"></use>
+                                </g>
+                                <g id="Icon_Contacts" transform="translate(18.000000, 15.000000)" fill="#EDF3F8">
+                                    <path d="M1.64422567,18.2983029 L13.184186,18.2983029 L13.4156362,14.8762761 C13.4644577,14.1719805 12.8144083,13.0644553 11.9320045,12.7398826 C9.03616519,11.7028774 5.79947935,11.699261 2.88917439,12.7416908 C2.01671578,13.0644553 1.3648581,14.1746928 1.41096731,14.8762761 L1.64422567,18.2983029 Z M13.6892892,19.8518627 L1.13818627,19.8518627 C0.687818627,19.8518627 0.31379902,19.5027206 0.282058824,19.0532108 L0.00583333333,15.0041912 C-0.0928186275,13.5132598 1.06441176,11.795 2.53389706,11.2519853 C5.68561275,10.1222059 9.15044118,10.1264951 12.2875735,11.2494118 C13.7682108,11.7941422 14.926299,13.5132598 14.8207843,15.0067647 L14.5454167,19.0514951 C14.5153922,19.5027206 14.1422304,19.8518627 13.6892892,19.8518627 L13.6892892,19.8518627 Z" id="Fill-3"></path>
+                                    <path d="M7.48528186,1.28676471 C5.96579443,1.28676471 4.72893363,2.78064833 4.72893363,4.61525954 C4.72893363,6.44987074 5.96579443,7.94276961 7.48528186,7.94276961 C9.0047693,7.94276961 10.2416301,6.44987074 10.2416301,4.61525954 C10.2416301,2.78064833 9.0047693,1.28676471 7.48528186,1.28676471 M7.48528186,9.22953431 C5.21542892,9.22953431 3.36849265,7.15955882 3.36849265,4.61519608 C3.36849265,2.06997549 5.21542892,0 7.48528186,0 C9.7551348,0 11.6020711,2.06997549 11.6020711,4.61519608 C11.6020711,7.15955882 9.7551348,9.22953431 7.48528186,9.22953431" id="Fill-1"></path>
+                                </g>
+                            </g>
+                            <g id="Oval-3">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                <use stroke="#B64F4F" stroke-width="5" fill="#FF8D8D" fill-rule="evenodd" xlink:href="#path-11"></use>
+                            </g>
+                            <g id="Group-4" transform="translate(444.000000, 115.000000) rotate(-1.000000) translate(-444.000000, -115.000000) translate(401.000000, 72.000000)">
+                                <mask id="mask-14" fill="white">
+                                    <use xlink:href="#path-13"></use>
+                                </mask>
+                                <use id="Mask" fill="#D8D8D8" xlink:href="#path-13"></use>
+                                <image id="woman_2" mask="url(#mask-14)" x="0" y="2.52745253" width="85.940036" height="85.9333861" xlink:href="woman_2-cd.jpeg"></image>
+                            </g>
+                            <g id="Group-3" transform="translate(300.000000, 1.000000)">
+                                <mask id="mask-16" fill="white">
+                                    <use xlink:href="#path-15"></use>
+                                </mask>
+                                <use id="Mask" fill="#D8D8D8" xlink:href="#path-15"></use>
+                                <image id="woman" mask="url(#mask-16)" x="-0.441608059" y="0" width="48.3845919" height="47.9185464" xlink:href="woman-ce.jpeg"></image>
+                            </g>
+                            <g id="Group-21" transform="translate(30.000000, 2.000000)">
+                                <mask id="mask-18" fill="white">
+                                    <use xlink:href="#path-17"></use>
+                                </mask>
+                                <use id="Mask" fill="#D8D8D8" xlink:href="#path-17"></use>
+                                <image id="man_2" mask="url(#mask-18)" x="-1.54156719" y="0.652743942" width="47.9988598" height="50" xlink:href="man_2-sp.jpeg"></image>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

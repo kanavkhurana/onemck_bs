@@ -16,9 +16,9 @@ $('#filterPopover').popover({
   trigger:'click',
   template:'<div class="popover filterpopup" role="tooltip"><div class="arrow popoverarrow"></div><h3 class="popover-title"></h3><div class="popover-content filterpopovercontent"></div></div>',
   content: function() {
-    //if(findBootstrapEnvironment() == 'xs'){
+    if(findBootstrapEnvironment() != 'xs'){
       return $('#filter_popover_content_wrapper').html();
-    //}
+    }
   }
 });
 
@@ -27,3 +27,20 @@ $('#filterPopover').popover({
 $('#oppdropdown-ul a').click(function(){
   $('#oppdropdownselected').text($(this).text());
 });
+
+function findBootstrapEnvironment() {
+  var envs = ['xs', 'sm', 'md', 'lg'];
+
+  var $el = $('<div>');
+  $el.appendTo($('body'));
+
+  for (var i = envs.length - 1; i >= 0; i--) {
+    var env = envs[i];
+
+    $el.addClass('hidden-'+env);
+    if ($el.is(':hidden')) {
+      $el.remove();
+      return env;
+    }
+  }
+}

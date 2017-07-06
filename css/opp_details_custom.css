@@ -69,6 +69,18 @@
     border-right: none;
     /*text-align: right;*/
   }
+  #oppdatatable > tbody > tr:first-child > td{
+  border: none;
+  }
+  #noteslistgroup > li > ul > li > ul > li:last-child{
+    float:right;
+    font-size: 0.5714285714em;
+    /*to ensure the floated element is centrally aligned*/
+    line-height: 35px;
+  }
+  #filtercol{
+    margin-bottom:1em;
+  }
 }
 @media(min-width:992px){
   #highlightstable > tbody > tr > td:last-child > table{
@@ -141,6 +153,15 @@
     display: -ms-flexbox;
     display:         flex;
   }
+  #noteslistgroup > li > ul > li > ul > li:last-child{
+    float:right;
+    font-size: 0.5714285714em;
+    /*to ensure the floated element is centrally aligned*/
+    line-height: 35px;
+  }
+  .tab-desk-float-right{
+    float: right;
+  }
 }
 @media (min-width:768px) and (max-width:992px){
   #highlightstable > tbody > tr > td:nth-child(4) > table{
@@ -179,6 +200,24 @@
     display: -ms-flexbox;
     display:         flex;
   }
+  #oppdatatable > tbody > tr > td:first-child{
+    width: 30%;
+  }
+  #oppdatatable > tbody > tr > td:nth-child(2){
+    width: 15%;
+  }
+  #oppdatatable > tbody > tr > td:nth-child(3){
+    width: 15%;
+  }
+  #oppdatatable > tbody > tr > td:nth-child(4){
+    width: 15%;
+  }
+  #noteslistgroup > li > ul > li > ul > li:last-child{
+    font-size: 0.5714285714em;
+  }
+  .tab-desk-float-right{
+    float:right;
+  }
 }
 
 body{
@@ -188,14 +227,6 @@ body{
   font-family: "FranKleinBook_Book";
 }
 
-.row{
-  /*margin-right: 0px;
-  margin-left:  0px;*/
-}
-.container-fluid{
-  /*padding-left: 0px;
-  padding-right: 0px;*/
-}
 ul li{
   vertical-align: middle;
 }
@@ -480,7 +511,9 @@ ul li{
   margin-right: -2px;
 }
 #oppdetailsrow li{
-  border: none;
+  /*border: none;*/
+  border-left: none;
+  border-right: none;
   padding-bottom: 0px;
 }
 #noteslistgroup{
@@ -507,12 +540,7 @@ ul li{
 #noteslistgroup > li > ul{
   margin-bottom:0px;
 }
-#noteslistgroup > li > ul > li > ul > li:last-child{
-  float:right;
-  font-size: 0.5714285714em;
-  /*to ensure the floated element is centrally aligned*/
-  line-height: 35px;
-}
+
 #noteslistgroup > li > ul > li > ul > li:first-child>img{
    height: 35px;
    width: auto;
@@ -541,6 +569,8 @@ ul li{
   background: none;
   padding-top: 0px;
   padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 #oppdatatable > tbody > tr > td:last-child > ul{
   margin-bottom: 0px;
@@ -570,6 +600,34 @@ border: none;
 }
 #filterPopover{
   cursor:pointer;
+}
+#filterCollapse{
+  cursor:pointer;
+}
+#filter_collapsible_mobile{
+  font-family: "FranKleinBook_Book";
+  color: rgba(240,240,240,1);
+}
+#filter_collapsible_div{
+  background-color: rgba(69,83,94,70);
+  border-radius: 4px;
+}
+#filter_collapsible_mobile div{
+  margin-bottom: 0px;
+}
+#filter_collapsible_mobile ul{
+  /*margin-bottom: 0px;*/
+}
+#filter_collapsible_mobile li{
+  background: none;
+  border: none;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+#filterclearbtn{
+  background: none;
+  color:#40B4FA;
+  border: none;
 }
 
 .filtercolul{
@@ -622,7 +680,7 @@ margin-bottom: 0px !important;
   font-family: 'PT_Serif_Italic';
 }
 .dropdownspan{
-    width: 120px;
+    width: 100px;
     text-align: left;
     display: inline-block;
 }
@@ -633,6 +691,7 @@ margin-bottom: 0px !important;
 #oppdropdowncaret{
   color: #F5852A;
 }
+
 ul.dropdown-menu > li {
     cursor: pointer;
 }
