@@ -139,6 +139,21 @@ $(document).ready(function(){
 
   $(engtimelinecol).append($(engtimelinerow));
 
+  //Add the influencers template
+  influencerstemplate = document.querySelector('#influencersgraphic');
+  influencerstemplate.content.querySelector('#infgraphic_accountOwner').innerHTML = 'JJ';
+  influencerstemplate.content.querySelector('#infgraphic_promoter').innerHTML = 'PP';
+  influencerstemplate.content.querySelector('#infgraphic_neutral_fn').innerHTML = 'NNFN';
+  influencerstemplate.content.querySelector('#infgraphic_neutral_ln').innerHTML = 'NNLN';
+  influencerstemplate.content.querySelector('#infgraphic_detractor_fn').innerHTML = 'DDFN';
+  influencerstemplate.content.querySelector('#infgraphic_detractor_ln').innerHTML = 'DDLN';
+
+
+  var influencersgraphic = document.importNode(influencerstemplate.content, true);
+
+  $('#influencerdiv').append(influencersgraphic);
+
+
 });
 
 $(window).resize(function(){
