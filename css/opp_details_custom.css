@@ -131,7 +131,7 @@
     display: table-cell;
   }
   #totalSaleslistgroup > li > ul > li:first-child{
-    width: 45%;
+    width: 50%;
   }
   #influencerdiv svg{
     width: 85%
