@@ -450,18 +450,50 @@ ul li{
 #totalSaleslistgroup > li:last-child{
   border-bottom:none;
 }
-/*
-#totalSaleslistgroup > li > ul{
+#techsetupdiv{
+  background: white;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#techsetupdiv > ul > li{
+  background: none;
+  border: none;
+  display: table;
+  width: 100%;
+}
+#techsetupdiv > ul > li:not(:last-child){
+  border-bottom-style: solid;
+  border-bottom-color: #D1D8DE;
+  border-bottom-width: 1px;
+}
+
+#techsetupdiv > ul > li > ul{
   display: table-row;
 }
-#totalSaleslistgroup > li > ul > li{
+
+#techsetupdiv > ul > li > ul > li{
   display: table-cell;
 }
-#totalSaleslistgroup > li > ul > li:first-child{
-  width: 45%;
+#techsetupdiv > ul > li > ul > li:first-child{
+  width: 40%;
 }
-*/
-
+#techsetupdiv > ul > li > ul > li:nth-child(2){
+  width: 30%;
+}
+#techsetupdiv > ul > li > ul > li:nth-child(3){
+  width: 30%;
+}
+#techsetupdiv > ul > li > ul > li:not(:first-child){
+    text-align: center;
+}
+.sh_data_styling{
+  color:#0181CE;
+}
+.usp_data_styling{
+  color:#DD267D;
+}
 #influencerdiv{
   background: white;
   border-radius: 6px;
