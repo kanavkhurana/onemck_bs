@@ -356,6 +356,7 @@ ul li{
 }
 .highlightsnestedtable tr:first-child{
   font-size: 1.2857142857em;
+  font-weight: bold;
 }
 .highlightsnestedtable tr:nth-child(2){
   font-size: 1em;
