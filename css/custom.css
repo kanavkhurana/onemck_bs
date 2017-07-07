@@ -47,6 +47,12 @@ body{
     padding-left: 2px;
     padding-right: 2px;
   }
+  #leadtable > tbody > tr > td:first-child{
+   width: 20%;
+  }
+  #leadtable > tbody > tr > td:nth-child(4){
+   width: 18%;
+  }
   body{font-size: 12px;}
 
 }
@@ -60,6 +66,9 @@ body{
   #leadtable tr:last-child td:nth-child(3){
     border-bottom-right-radius: 10px;
   }
+  #leadtable > tbody > tr > td:first-child{
+   width: 50%;
+  }
   #leadtable tr:first-child td:nth-child(3){
     border-top-right-radius: 10px;
   }
@@ -69,6 +78,7 @@ body{
   #accounttable tr:first-child td:nth-child(2){
     border-top-right-radius: 10px;
   }
+
 }
 @media (max-width:600px){
   .centersearch>ul>li:first-child>div>input{

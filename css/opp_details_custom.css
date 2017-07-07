@@ -219,6 +219,9 @@
   .tab-desk-float-right{
     float:right;
   }
+  .filterpopup {
+  width: 175px !important;
+  }
 }
 
 body{
