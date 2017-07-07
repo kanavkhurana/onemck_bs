@@ -368,9 +368,18 @@ ul li{
   border: none;
 }
 #engheaderpanel > div:first-child{
-  background-color: #FFB700;
+  /*background-color: #FFB700;*/
   padding-bottom: 1px;
   border: none;
+}
+.medEngScore{
+  background-color: #FFB700;
+}
+.highEngScore{
+  background-color: #24CC65;
+}
+.lowEngScore{
+  background-color: #FF4000;
 }
 #engheaderpaneldiv{
   padding-left: 20px;
