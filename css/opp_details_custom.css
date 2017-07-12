@@ -78,6 +78,12 @@
     /*to ensure the floated element is centrally aligned*/
     line-height: 35px;
   }
+  #noteslistgroup_modal > li > ul > li > ul > li:last-child{
+    float:right;
+    font-size: 0.5714285714em;
+    /*to ensure the floated element is centrally aligned*/
+    line-height: 35px;
+  }
   #filtercol{
     margin-bottom:1em;
   }
@@ -159,6 +165,12 @@
     /*to ensure the floated element is centrally aligned*/
     line-height: 35px;
   }
+  #noteslistgroup_modal > li > ul > li > ul > li:last-child{
+    float:right;
+    font-size: 0.5714285714em;
+    /*to ensure the floated element is centrally aligned*/
+    line-height: 35px;
+  }
   .tab-desk-float-right{
     float: right;
   }
@@ -214,6 +226,9 @@
   }
 
   #noteslistgroup > li > ul > li > ul > li:last-child{
+    font-size: 0.5714285714em;
+  }
+  #noteslistgroup_modal > li > ul > li > ul > li:last-child{
     font-size: 0.5714285714em;
   }
   .tab-desk-float-right{
@@ -542,32 +557,32 @@ ul li{
   border-top: none;
 }
 
-#noteslistgroup{
+#noteslistgroup, #noteslistgroup_modal{
   margin-bottom: 0px;
 }
-#noteslistgroup li{
+#noteslistgroup li, #noteslistgroup_modal li{
   background: none;
 }
-#noteslistgroup > li{
+#noteslistgroup > li, #noteslistgroup_modal > li{
   border:none;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-#noteslistgroup > li:not(:last-child){
+#noteslistgroup > li:not(:last-child), #noteslistgroup_modal > li:not(:last-child){
   border:none;
   border-bottom-width: 1px;
   border-bottom-color: #D1D8DE;
   border-bottom-style: solid;
 }
-#noteslistgroup > li > ul > li{
+#noteslistgroup > li > ul > li, #noteslistgroup_modal > li > ul > li{
   border:none;
 }
-#noteslistgroup > li > ul{
+#noteslistgroup > li > ul, #noteslistgroup_modal > li > ul{
   margin-bottom:0px;
 }
 
-#noteslistgroup > li > ul > li > ul > li:first-child>img{
+#noteslistgroup > li > ul > li > ul > li:first-child>img, #noteslistgroup_modal > li > ul > li > ul > li:first-child>img{
    height: 35px;
    width: auto;
 }
