@@ -78,6 +78,26 @@ body{
   #accounttable tr:first-child td:nth-child(2){
     border-top-right-radius: 10px;
   }
+  #accounttable > tbody > tr > td:first-child{
+    width: 60%;
+  }
+  #accounttable > tbody > tr > td:nth-child(2) > div:first-child{
+    display: table;
+    width: 100%;
+  }
+  #accounttable > tbody > tr > td:nth-child(2) > div:first-child > ul{
+    display: table-row;
+  }
+  #accounttable > tbody > tr > td:nth-child(2) > div:first-child > ul > li:first-child{
+    width: 60%;
+  }
+  #accounttable > tbody > tr > td:nth-child(2) > div:first-child > ul > li:nth-child(2) > img{
+    margin: 0 auto;
+  }
+  #accounttable > tbody > tr > td:nth-child(2) > div:first-child > ul > li{
+    display: table-cell;
+    vertical-align: middle;
+  }
 
 }
 @media (max-width:600px){
