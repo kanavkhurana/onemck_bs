@@ -367,11 +367,13 @@ ul li{
 
 #engheaderpanel{
   border: none;
+  border-radius: 6px;
 }
 #engheaderpanel > div:first-child{
   /*background-color: #FFB700;*/
   padding-bottom: 1px;
   border: none;
+  border-radius: 6px;
 }
 .medEngScore{
   background-color: #FFB700 !important;
@@ -385,6 +387,7 @@ ul li{
 #engheaderpaneldiv{
   padding-left: 20px;
   padding-right: 20px;
+  background: white;
 }
 #engagementtable_nested{
   margin-bottom: 15px;
