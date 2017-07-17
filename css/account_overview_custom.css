@@ -388,6 +388,7 @@ ul li{
   padding-left: 20px;
   padding-right: 20px;
   background: white;
+  border-radius: 6px;
 }
 #engagementtable_nested{
   margin-bottom: 15px;
