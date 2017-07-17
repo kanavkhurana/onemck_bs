@@ -528,3 +528,8 @@ ul li{
   border: none;
   padding-bottom: 0px;
 }
+
+#engtimelinecol{
+  padding-left: 25px;
+  padding-right: 25px;
+}
