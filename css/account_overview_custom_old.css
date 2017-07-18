@@ -384,6 +384,12 @@ ul li{
 .lowEngScore{
   background-color: #FF4000 !important;
 }
+#engheaderpaneldiv{
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+  border-radius: 6px;
+}
 #engagementtable_nested{
   margin-bottom: 15px;
 }
@@ -496,47 +502,6 @@ ul li{
 #techsetupdiv > ul > li > ul > li:not(:first-child){
     text-align: center;
 }
-
-#accdetaildiv{
-  background: white;
-  border-radius: 6px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-#accdetaildiv > ul > li{
-  background: none;
-  border: none;
-  display: table;
-  width: 100%;
-}
-#accdetaildiv > ul > li:not(:last-child){
-  border-bottom-style: solid;
-  border-bottom-color: #D1D8DE;
-  border-bottom-width: 1px;
-}
-
-#accdetaildiv > ul > li > ul{
-  display: table-row;
-}
-
-#accdetaildiv > ul > li > ul > li{
-  display: table-cell;
-}
-#accdetaildiv > ul > li > ul > li:first-child{
-  width: 40%;
-}
-#accdetaildiv > ul > li > ul > li:nth-child(2){
-  width: 30%;
-}
-#accdetaildiv > ul > li > ul > li:nth-child(3){
-  width: 30%;
-}
-#accdetaildiv > ul > li > ul > li:not(:first-child){
-    text-align: center;
-}
-
-
 .sh_data_styling{
   color:#0181CE;
 }
