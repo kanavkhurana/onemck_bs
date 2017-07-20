@@ -30,6 +30,11 @@
   src: url("../custom_fonts/FranKleinBook/FranKleinMedium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Monem_Bold";
+  src: url("../custom_fonts/Monem/MonemExtraBoldPDF.ttf") format("truetype");
+}
+
 body{
   background-image: url("../img/background_small.png");
   /*background-repeat: no-repeat;*/
