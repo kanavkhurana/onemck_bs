@@ -45,6 +45,9 @@ body{
   #centerheadingdiv{
     font-size: 2.5em;
   }
+  .topheadingdiv{
+    font-size: 1em;
+  }
 .mycontainer{
   margin-right: 20px;
   margin-left: 20px;
@@ -53,6 +56,9 @@ body{
 @media (min-width:768px) and (max-width:992px){
   #centerheadingdiv{
     font-size: 2.5em;
+  }
+  .topheadingdiv{
+    font-size: 1em;
   }
   #leadtablecolumn{
     padding-left: 2px;
@@ -70,6 +76,9 @@ body{
 @media (max-width:767px){
   #centerheadingdiv{
     font-size: 2em;
+  }
+  .topheadingdiv{
+    font-size: 1.2em;
   }
   #headersearchlogomobile{
     width:70%;
@@ -117,6 +126,9 @@ body{
 @media (max-width:600px){
   #centerheadingdiv{
     font-size: 2em;
+  }
+  .topheadingdiv{
+    font-size: 1.2em;
   }
   .centersearch>ul>li:first-child>div>input{
     font-size: 16px !important;
